@@ -5,8 +5,7 @@ project(binja_printk)
 # This can be overridden by the user if desired
 # We also override it to swap between building for dev and stable in CI
 if(NOT BNAPI_DIR)
-  set(BNAPI_DIR "vendor/api"
-    CACHE PATH "binaryninja-api root dir")
+  message(FATAL_ERROR "need BNAPI_DIR")
 endif()
 
 # Build fat Mach-O for macOS to support Intel and M1
