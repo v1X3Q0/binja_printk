@@ -1,4 +1,6 @@
-build
+build*
 .vscode
 *.swp
 __pycache__
+.DS_STORE
+
